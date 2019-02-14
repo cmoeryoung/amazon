@@ -30,31 +30,31 @@ if (!empty($contents)){
     for ($i=0;$i<$count;++$i){
         $category_rule = '/<span class="category">(.*?)<\/span>/si';
         preg_match($category_rule,$contents[1][$i],$categorys);
-        $category = $categorys[1];
+//        $category = $categorys[1];
 //        print_r($category);
 
         $rank_rule = '/<span class="zg-badge-text">#(.*?)<\/span>/si';
         preg_match($rank_rule,$contents[1][$i],$ranks);
-        $rank = $ranks[1];
+//        $rank = $ranks[1];
 
         $main_img_url_rule = '/<img alt="(.*?)" src="(.*?)" width="200" height="200">/si';
         preg_match($main_img_url_rule,$contents[1][$i],$img_title);
-        $title = $img_title[1];
-        $main_img_url = $img_title[2];
+//        $title = $img_title[1];
+//        $main_img_url = $img_title[2];
 
         $star_rule = '/<span class="a-icon-alt">(.*?) out of 5 stars<\/span>/si';
         preg_match($star_rule,$contents[1][$i],$stas);
-        $star = $stars[1];
+//        $star = $stars[1];
 
         $reviews_num_rule = '/<a class="a-size-small a-link-normal".*?>(.*?)<\/a>/si';
         preg_match($reviews_num_rule,$contents[1][$i],$reviews_nums);
-        $reviews_num = $reviews_nums[1];
+//        $reviews_num = $reviews_nums[1];
 
         $price_rule = '/<span class="p13n-sc-price">(.*?)<\/span>/si';
         preg_match($price_rule,$contents[1][$i],$prices);
-        $price = $prices[1];
+//        $price = $prices[1];
 
-        echo $category,$rank,$title,$main_img_url,$star,$reviews_num,$price,'<br>';
+//        echo $category,$rank,$title,$main_img_url,$star,$reviews_num,$price,'<br>';
 
 
 
