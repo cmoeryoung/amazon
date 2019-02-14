@@ -56,6 +56,14 @@ if (!empty($contents)){
 
 //        echo $category,$rank,$title,$main_img_url,$star,$reviews_num,$price,'<br>';
 
+        $sql = "insert into table amazon_test (category,rank,title,main_img_url,start,review_num,price)
+            values ('$categorys[1]','$ranks[1]','$img_title[1]','$img_title[2]','$stars[1]','$reviews_nums[1]','$prices[1]')";
+        $rs = $mysqli->query($sql);
+        if ($rs->num_rows > 0){
+            echo 'Insert Data Success';
+        }else{
+            echo 'Insert Data Failed';
+        }
 
 
 
